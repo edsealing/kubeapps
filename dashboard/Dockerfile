@@ -1,6 +1,6 @@
 FROM node:8.9 AS build
 WORKDIR /app
-COPY . /app
+ADD . /app
 RUN yarn run build
 
 FROM bitnami/nginx

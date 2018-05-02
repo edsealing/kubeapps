@@ -1,6 +1,6 @@
 import * as React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../logo.svg";
+import logo from "../../logo.png";
 
 import { INamespaceState } from "../../reducers/namespace";
 import HeaderLink, { IHeaderLinkProps } from "./HeaderLink";
@@ -80,7 +80,7 @@ class Header extends React.Component<IHeaderProps, IHeaderState> {
           <header className={header}>
             <div className="header__logo">
               <NavLink to="/">
-                <img src={logo} alt="Kubeapps logo" />
+                <img src={logo} alt="EDCOP logo" />
               </NavLink>
             </div>
             {showNav && (
